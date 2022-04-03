@@ -4,7 +4,7 @@ public class LowestNumber {
 
     /** INSTRUCTIONS
      * Write a method to find the lowest number from this array.
-     */
+      nb */
 
     public static void main(String[] args) {
 
