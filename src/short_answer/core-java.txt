@@ -1,100 +1,126 @@
 ***ANSWER ALL OF THE QUESTIONS BELOW***
 
 What is a programming language?
-Answer:
+Answer:PL is set of instruction for computer to follow.
 
 What is a JDK composed of? Define each components?
-Answer:
+Answer:Java Development Kit, Java RunTime Environment, Java Virtual Machine.
+JDK: is a development environment for building Applications,Applets and components.
+JRE: is provide environment just to run java application
+JVM: JVM is intrepreter which is responsible to read code line by line.
 
 What is an IDE?
-Answer:
+Answer:Integrated Development Environment
 
 What are some of the most popular Java IDEs available in the market?
-Answer:
+Answer:Intellij,Eclipse,Netbeans
 
 Explain the entire java life cycle.
 Answer:
 
 What is a class?
-Answer:
+Answer:Class is real word entity for example vehile is a class.
 
 What is an object?
-Answer:
+Answer:an entity that has state and behavior is called object for example vehicle is a class and toyota is the object of the vehicle class.
 
 What is the entry point of a Java project?
-Answer:
+Answer:main method
 
 Why is the main() method static?
-Answer:
+Answer:because when jvm load class into the memory so it can call main method.
 
 Which class is the superclass of all classes?
-Answer:
+Answer:Java.lang.Object
 
 What is difference between path and classpath variables?
-Answer:
+Answer: path: The path environment variable is used to specify the set of directories which contains executional programs.
+        classpath: The class path environment variable is used to specify the location of the classes and packages.
 
 What is the difference between an Interface and Abstract class?
-Answer:
+Answer:Interface is allow only abstract method only.
+       Interface by default all variables are public static final.
+       Interfaces by default all methods are public and abstract.
+       Constructor not allowed in interface.
+
+       Abstract Class is class which allowed concrete method and abstract method
+       Abstract class no default cases for variables.
+       Abstract classes no default cases for methods.
+       Constructor are allowed in abstract.
 
 Can you make an Object from an Interface and Abstract class? If yes or no, how would you do it?
-Answer:
+Answer:In case of interface object creation is not allowed because interface have only method declration.
+       In case of abstract class object creation is not allowed because abstract class is not completed class.
 
 What is Access Modifier?
-Answer:
+Answer:Access Modifier are keyword used for defining accessibilty of class,methods and data members.
 
 What is OOP? Define each OOP concept.
-Answer:
+Answer:Object Oriented Programming languages.Inheritance,Polymorphism,Encapulation,Abstraction.
+
+Inheritance:The process of getting variables and methods from one class to another class is called inheritance.
+Single Inheritance,Multiple Inheritance,Multiple Inheritance,Hierarchical Inheritance.
+important point (java doesnot support multple inheritance due to ambiguity).
+
+Polymorphism:Polymorphism is a Greek word, where poly means many and morphism means Structures.
+Static polymorphism, Dynamic polymorphism
+
+Encapulation: the process of the binding data in a single unit is called encapulation.
+User not able to access the methods and variables directly so we provide getter and setter
+
+Abstraction: The process showing necessary data or implementation and hiding unnecessary data or implementation is called as Abstraction.
 
 What is Java Package and which package is imported by default?
-Answer:
+Answer:Java Package contain unit of classes.By default java.lang is imported by defalut.
 
 What is an API? List some API's that you have used so far.
-Answer:
+Answer:An application programming interface.REST,PartnerAPIS,Google,XML.
 
 Does java support multiple inheritance? Why or why not?
-Answer:
+Answer:To avoid ambiguity problem java doesnot support multiple inheritance.
 
 What is method overloading? List all of the different ways to overload.
-Answer:
+Answer: If we declare more than one method with the same name and with different parameter list then it is called as Method Overloading.
+using different number of parameter in argument, using different data type in argument.
 
 Explain exceptions in java and how to handle them.
-Answer:
+Answer:Exception is unexpected event occurred due to invalid input or may be logical error which interrupt the flow of the program.Using try catch or build in method throw keyword.
 
 What is static keyword? When and how do we use it?
-Answer:
+Answer:The static keyword in Java is mainly used for memory management. The static keyword in Java is used to share the same variable or method of a given class.Using a class name.
 
 What is final keyword? When and how do we use it?
-Answer:
+Answer:Final is reserved keyword in java to declare a constant expression to improve security.When you want to declare a constant method, variable,class just declare a final keyword.
 
 Explain the difference between final, finally and finalize?
 Answer:
 
 What is a constructor?
-Answer:
+Answer:Constructor is special method in java to initialize the object of the class.
 
 Can we have multiple constructors in a class?
-Answer:
+Answer:Yes,By passing different arguments.
 
 If we don't have a constructor declared, what is called during the object creation?
-Answer:
+Answer:By default compiler will generate zero argument constructor.
 
 What is "this" keyword in Java? When would we use it?
-Answer:
+Answer:This keyword is used to represent current class object. this keyword then (this.variableName), (this.MethodName()).
 
 What is "super" keyword in Java? What are some scenarios we would use it?
 Answer:
 
 What does JVM stand for?
-Answer:
+Answer:JAVA VIRTUAL MACHINE
 
 Is JVM platform independent?
-Answer:
+Answer:YES
 
 What version of Java are you using?
-Answer:
+Answer:jdk 11.0
 
 What does JAR stand for?
-Answer:
+Answer:JAVA ARCHIVE
 
 What is the difference between JDK and JVM?
 Answer:
