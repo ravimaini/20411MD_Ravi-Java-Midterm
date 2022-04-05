@@ -12,6 +12,9 @@ public class CompanyEmployee {
      *  Try to think like a Software Developer
      */
     public static void main(String[] args) {
+    EmployeeInfo employeeInfo= new EmployeeInfo(1);
+        EmployeeInfo employeeInfo2= new EmployeeInfo("David",1);
+
 
     }
 

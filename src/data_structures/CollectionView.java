@@ -1,7 +1,6 @@
 package data_structures;
 
 import java.util.HashMap;
-
 public class CollectionView {
 
     public static void main(String[] args) {
@@ -9,7 +8,6 @@ public class CollectionView {
          Map is created and some data_structures.data is inserted into it.
          Retrieve the Collection view of the values present in map
          */
-
         HashMap<Integer, String> map = new HashMap<Integer, String>();
         map.put(1, "NYC");
         map.put(2, "LA");
@@ -17,7 +15,7 @@ public class CollectionView {
         map.put(4, "Boston");
         map.put(5, "San Jose");
         map.put(6, "Seattle");
-
+        System.out.println(map.values());
+        }
     }
 
-}

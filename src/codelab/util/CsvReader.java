@@ -16,7 +16,6 @@ public class CsvReader {
      Based on number of solution you solved, message is generated for you.
      You need to find the average score of the class.
      **/
-
     public static void main(String[] args) {
 
         String csvFilePath = System.getProperty("user.dir") + "/src/codelab/status/roster.csv";
