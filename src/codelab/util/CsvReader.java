@@ -10,15 +10,14 @@ import java.util.Collections;
 import java.util.List;
 
 public class CsvReader {
-
     /**
      You will find a Comma-Separated Value (CSV) file within this package of CodeLab status is downloaded and it parsed.
      Based on number of solution you solved, message is generated for you.
      You need to find the average score of the class.
      **/
     public static void main(String[] args) {
-
-        String csvFilePath = System.getProperty("user.dir") + "/src/codelab/status/roster.csv";
+        int average_Score=0;
+        String csvFilePath = System.getProperty("user.dir") + "/src/codelab/data/roster.csv";
         String row;
         String csvSplitBy = ",";
         BufferedReader br;
@@ -35,6 +34,9 @@ public class CsvReader {
                 String[] rowArray = row.split(csvSplitBy);
                 roster.add(new Student(rowArray[5].replace("\"", ""), rowArray[4].replace("\"",
                         ""), Integer.parseInt(rowArray[10])));
+
+                average_Score+=Integer.parseInt(rowArray[10]);
+
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -44,7 +46,10 @@ public class CsvReader {
 
         for (Student student : roster) {
             System.out.println(convertNumberOfProblemsSolved(student));
+
         }
+        System.out.println("---------------------------------------------------------");
+        System.out.println("Average Score Of the Class = "+(average_Score/roster.size()));
     }
 
     private static String convertNumberOfProblemsSolved(Student student) {
@@ -63,5 +68,6 @@ public class CsvReader {
         } else {
             return "Very low effort. Not a good sign, " + name;
         }
+
     }
 }
