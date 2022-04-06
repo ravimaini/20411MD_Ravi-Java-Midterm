@@ -1,8 +1,6 @@
 package sorting;
 
 public class Sorting {
-
-
     /** INSTRUCTIONS
      * You must implement all of the sorting algorithms below. Feel free to add any helper methods that you may need,
      * but make sure they are private, as to not be accessed outside of this class.
@@ -10,9 +8,7 @@ public class Sorting {
      * You must also store the sorted arrays into their own individual database tables (Selection Sort should be stored
      *  in table `selection_sort`, Insertion Sort should be stored in table `insertion_sort`)
      */
-
     long executionTime = 0;
-
     public static void printSortedArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);

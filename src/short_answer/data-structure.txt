@@ -7,65 +7,73 @@ What are the various operations that can be performed on different data structur
 Answer:Insertion,Deletion,Transversal.
 
 When would we use data structures in the real world?
-Answer:
+Answer:To store bulk of data in such way where we can perform some operation like retrieving and deleting for eg Amazon User
 
 What is an Array?
-Answer:
+Answer:Array is a homogenous group of data.
 
 What is the difference between Array and ArrayList?
-Answer:
+Answer:Array is immutable in nature
+       ArrayList is mutable in nature
 
 What is a LinkedList?
-Answer:
+Answer:LinkList
 
 How is an Array different from LinkedList?
 Answer:
 
 What is a Queue?
-Answer:
+Answer:The queue interface is provided in java.util package and it implements the Collection interface.
+The queue implements FIFO i.e. First In First Out. This means that the elements entered first are the ones that are deleted first.
 
 What is a Stack (referring to data structures)?
-Answer:
+Answer:Stack is
 
 What is FIFO and LIFO?
-Answer:
-
+Answer:FIFO - First In First Out
+       LIFO - Last In First Out
 Explain Big O Notation?
-Answer:
+Answer:Big O notation is one of the most fundamental tools for computer scientists to analyze the cost of an algorithm. It is a good practice for software engineers to understand in-depth as well.
 
 What is the best case to search an element from an array?
-Answer:
+Answer:Sequential search
 
 What is the worst case to search an element from an array?
-Answer:
+Answer:O(log N)
 
 Describe what a tree data structure is?
-Answer:
+Answer:A tree is a hierarchical data structure defined as a collection of nodes. Nodes represent value and nodes are connected by edges. A tree has the following properties: The tree has one node called root.
 
 Describe what a graph data structure is?
-Answer:
+Answer:A graph is a non-linear kind of data structure made up of nodes or vertices and edges.
 
 What is the difference between the HashTable and HashMap?
-Answer:
+Answer:Hashtable is that HashMap is non-synchronized. Hashtable is thread-safe and can be shared between multiple threads.
+Hashtable is synchronized. HashMap can not be shared between multiple threads without proper synchronization.
 
 How do HashMaps work in Java? How do they store values, and when are they useful?
-Answer:
+Answer:HashMap in Java works on hashing principles. It is a data structure that allows us to store object and retrieve it in constant time O(1) provided we know the key.
 
 What is ArrayIndexOutOfBoundsException in java? When does it occur?
-Answer:
+Answer:The ArrayIndexOutOfBoundsException occurs whenever we are trying to access any item of an array at an index which is not present in the array.
 
 What are the different ways of copying an array into another array?
-Answer:
+Answer:There are mainly four different ways to copy all elements of one array into another array in Java.
+       Manually.
+       Arrays.copyOf()
+       System.arraycopy()
+       Object.clone()
+
 
 What is DFS and BFS?
 Answer:
 
 What is Recursion?
-Answer:
+Answer:In computer science, recursion is a programming technique using function or algorithm that calls itself one or more times until a specified condition is met at which time the rest of each repetition is processed from the last one called to the first.
 
 What are linear and non-linear data Structures?
-Answer:
-
+Answer:Data structure where data elements are arranged sequentially or linearly where each and every element is attached to its previous and next adjacent is called a linear data structure.
+      Data structures where data elements are not arranged sequentially or linearly are called non-linear data structures.
 
 Outline different sorting algorithms and their time complexities:
 

@@ -79,7 +79,7 @@ Answer:An application programming interface.REST,PartnerAPIS,Google,XML.
 Does java support multiple inheritance? Why or why not?
 Answer:To avoid ambiguity problem java doesnot support multiple inheritance.
 
-What is method overloading? List all of the different ways to overload.
+What is method overloading? List all the different ways to overload.
 Answer: If we declare more than one method with the same name and with different parameter list then it is called as Method Overloading.
 using different number of parameter in argument, using different data type in argument.
 
@@ -93,7 +93,11 @@ What is final keyword? When and how do we use it?
 Answer:Final is reserved keyword in java to declare a constant expression to improve security.When you want to declare a constant method, variable,class just declare a final keyword.
 
 Explain the difference between final, finally and finalize?
-Answer:
+Answer:Final - is used for restricting some functionalities.
+       Finally - is used with a try/catch block and guarantees that a section of code will be executed,
+       even if an exception is thrown.
+       Finalize - It is a method that the Garbage Collector always calls just before the deletion/destroying the object which
+       is eligible for Garbage Collection, to perform clean-up activity.
 
 What is a constructor?
 Answer:Constructor is special method in java to initialize the object of the class.
@@ -108,13 +112,15 @@ What is "this" keyword in Java? When would we use it?
 Answer:This keyword is used to represent current class object. this keyword then (this.variableName), (this.MethodName()).
 
 What is "super" keyword in Java? What are some scenarios we would use it?
-Answer:
+Answer:super' is a keyword used to access data of the parent class.
+       an example could be that vehicle and car both classes have
+       a common property color. If we print color property, it will print the color of current class by default.
 
 What does JVM stand for?
 Answer:JAVA VIRTUAL MACHINE
 
 Is JVM platform independent?
-Answer:YES
+Answer:yes
 
 What version of Java are you using?
 Answer:jdk 11.0
@@ -123,76 +129,88 @@ What does JAR stand for?
 Answer:JAVA ARCHIVE
 
 What is the difference between JDK and JVM?
-Answer:
+Answer:JDK is a software development kit to develop applications in Java.
+       JVM executes Java byte code and provides an environment for executing it.
+
 
 What is the difference between JVM and JRE?
-Answer:
+Answer:JRE is an environment, in order to execute any Java program locally.
+       JRE is an environment, in order to execute any Java program locally.
 
 Explain the difference between compile-time and run-time?
-Answer:
+Answer:Compile time : Compile-Time is the time at which the source code is converted into an executable code
+                      Run-Time is the time at which the executable code is started running.
 
 What is heap?
-Answer:
+Answer: Heap is the memory used to store objects.
 
 How does Java manage its memory?
-Answer:
+Answer: Heap and Stack
 
 What is the difference between String, StringBuffer and StringBuilder?
 Answer:
 
 What is Singleton class?
-Answer:
+Answer:A class that can have only one object at a time.
 
 What is Serialization and Deserialization?
-Answer:
+Answer:Serialization is a mechanism of converting the state of an object into a byte stream.
+       Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory.
 
 Explain the difference between While and Do..While loops?
-Answer:
+Answer: While loop check the condition first if condition is true it will execute the body.
+       Do While executes the loop first, and then checks the condition to see if it should continue looping.
 
 What is Enum?
-Answer:
+Answer:An enum is a special "class" that represents a group of constants
 
 What is Iterator?
-Answer:
+Answer: An Iterator is an object that can be used to loop through collections, like ArrayList and HashSet.
+
 
 Which one will take more memory: an int or Integer? Why?
 Answer:
 
 Why are Strings considered to be immutable in Java?
-Answer:
+Answer: The string is Immutable in Java because String objects are cached in the String pool.
+:
 
 What is constructor chaining in Java?
-Answer:
+Answer:Constructor chaining is the process of calling one constructor from another constructor with respect to current object.
+Constructor chaining can be done in two ways: Within same class: It can be done using this() keyword for constructors in same class.
 
 The difference between Serial and Parallel Garbage Collector?
-Answer:
+Answer:Serial garbage collector uses a single thread for garbage collection process while the
+       parallel garbage collector uses multiple threads for the garbage collection.
 
 What does JIT stands for?
-Answer:
+Answer:Just In Time
 
 Explain the process of Java garbage collection?
-Answer:
+Answer:Java garbage collection is the process by which Java programs perform automatic memory management.
 
 Can you guarantee the garbage collection process?
-Answer:
+Answer:No
 
 What is the difference between stack and heap in Java?
-Answer:
+Answer:tack is used to store the order of method execution and local variables
+       while heap memory stores the objects
 
 What is reflection in Java and why is it useful?
 Answer:
 
 What is multithreading in Java?
-Answer:
+Answer:Multithreading refers to a process of executing two or more threads simultaneously
 
 What is synchronization in Java?
-Answer:
+Answer:The capability to control the access of multiple threads to any shared resource.
 
 What is a Framework?
-Answer:
+Answer:A framework is a structure that you can build software on.
 
 What are the testing Frameworks available in Java?
-Answer:
+Answer:JUnit, JBehave, Serenity, Selenium, TestNG
+
 
 What are jUnit and testNG?
 Answer:
@@ -204,4 +222,4 @@ What is dependency injection in Java?
 Answer:
 
 Explain what static binding and dynamic binding is?
-Answer:
+Answer:tatic binding uses Type information for binding while Dynamic binding uses Objects to resolve binding.
