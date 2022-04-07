@@ -1,6 +1,10 @@
 package data_structures;
 
+import databases.SharedStepsDatabase;
+
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class UseArrayList {
 
@@ -11,16 +15,31 @@ public class UseArrayList {
          *
          * Store and retrieve data_structures.data from/to a database table.
          */
-        ArrayList<Integer> list= new ArrayList<Integer>();
-        list.add(0);
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.add(5);
-        list.add(6);
-        list.add(7);
+        SharedStepsDatabase input = new SharedStepsDatabase();
+        List<String> list= new ArrayList();
+        list.add("Toyota");
+        list.add("Honda");
+        list.add("Nissan");
+        list.add("BMW");
+        list.add("Audi");
+        list.add("Tesla");
+        System.out.println("Initial ArrayList: " + list);
         System.out.println(list);
+
+
+        String tableName = "Cars";
+        String coloumnName = "car_make";
+
+        input.insertList( tableName, coloumnName, list);
+
+        String query = "SELECT * FROM Cars";
+        try {
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+
+        }  System.out.println(list);
+
 
 
     }
