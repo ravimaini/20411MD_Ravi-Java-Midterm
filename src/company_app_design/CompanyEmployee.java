@@ -1,6 +1,6 @@
 package company_app_design;
 
-public class CompanyEmployee {
+public class CompanyEmployee implements Employee {
 
     /** INSTRUCTIONS
      *  This class has a main method where you will be able to create instances of the EmployeeInfo class in order
@@ -12,10 +12,34 @@ public class CompanyEmployee {
      *  Try to think like a Software Developer
      */
     public static void main(String[] args) {
-    EmployeeInfo employeeInfo= new EmployeeInfo(1);
-        EmployeeInfo employeeInfo2= new EmployeeInfo("David",1);
+
+        EmployeeInfo employeeInfo2= new EmployeeInfo("David",1,"l1","Davis@amazon.com","IT",80000);
 
 
     }
 
+    @Override
+    public int employee_Id() {
+        return 0;
+    }
+
+    @Override
+    public String employeeName() {
+        return null;
+    }
+
+    @Override
+    public void assignDepartment() {
+
+    }
+
+    @Override
+    public int calculateSalary() {
+        return 0;
+    }
+
+    @Override
+    public void benefits() {
+
+    }
 }

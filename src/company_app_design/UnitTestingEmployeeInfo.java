@@ -7,6 +7,8 @@ public class UnitTestingEmployeeInfo {
      */
 
     public static void main(String[] args) {
+        EmployeeInfo employee= new EmployeeInfo("David",1,"l1","Davis@amazon.com","IT",80000);
+
 
     }
 }

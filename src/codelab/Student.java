@@ -8,13 +8,11 @@ public class Student implements Comparable<Student> {
 
     public Student() {
     }
-
     public Student(String firstName, String lastName, int numberOfExercisesSolved) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.numberOfExercisesSolved = numberOfExercisesSolved;
     }
-
     public String getFirstName() {
         return firstName;
     }

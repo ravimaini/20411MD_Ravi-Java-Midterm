@@ -32,16 +32,13 @@ public class UseArrayList {
 
         input.insertList( tableName, coloumnName, list);
 
-        String query = "SELECT * FROM Cars";
-        try {
-            
-        } catch (SQLException e) {
-            e.printStackTrace();
-
-        }  System.out.println(list);
-
-
-
+//        String query = "SELECT * FROM Cars";
+//        try {
+//
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//
+//        }  System.out.println(list);list
     }
 
 }
