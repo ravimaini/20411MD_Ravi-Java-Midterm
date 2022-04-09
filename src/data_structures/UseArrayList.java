@@ -4,11 +4,12 @@ import databases.SharedStepsDatabase;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class UseArrayList {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         /*
          * Demonstrate how to use ArrayList that includes using the add, peek, remove & retrieve methods.
          * Use For-Each loop and While-loop with Iterator to retrieve data_structures.data.
@@ -16,7 +17,7 @@ public class UseArrayList {
          * Store and retrieve data_structures.data from/to a database table.
          */
         SharedStepsDatabase input = new SharedStepsDatabase();
-        List<String> list= new ArrayList();
+        List<String> list = new ArrayList();
         list.add("Toyota");
         list.add("Honda");
         list.add("Nissan");
@@ -30,15 +31,14 @@ public class UseArrayList {
         String tableName = "Cars";
         String coloumnName = "car_make";
 
-        input.insertList( tableName, coloumnName, list);
+        input.insertList(tableName, coloumnName, Collections.singletonList(list));
 
-//        String query = "SELECT * FROM Cars";
-//        try {
-//
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//
-//        }  System.out.println(list);list
+        String query = "SELECT * FROM Cars";
+        list = input.executeQueryReadAllSingleColumn(query, coloumnName);
+
+
+        System.out.println(list);
     }
 
-}
+
+    }

@@ -65,7 +65,7 @@ public class DataReader {
         String coloumnName = "dataRader";
         List<String> fileUpload = Collections.singletonList(System.getProperty("user.dir") +
                 "\\src\\data_structures\\data\\self-driving-car\\");
-        object.insertList(tableName, coloumnName, fileUpload);
+        object.insertList(tableName, coloumnName, Collections.singletonList(fileUpload));
         String query = "SELECT * FROM dataReader";
         String dataReader = null;
         try {
