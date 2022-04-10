@@ -13,13 +13,17 @@ What is an IDE?
 Answer:Integrated Development Environment
 
 What are some of the most popular Java IDEs available in the market?
-Answer:Intellij,Eclipse,Netbeans
+Answer:Intellij,Eclipse,Netbeans.
 
 Explain the entire java life cycle.
-Answer:
+Answer:JDK is composed of Java Development Kit (JDK), Java Run-time Environment (JRE), and Java Virtual Machine (JVM).
+       - JDK is a widely used software development environment package, that provides a base to all the application targeted to
+       build a java based application.
+       - JRE is part of JDK. JRE is a set of components to run java applications.
+       - JVM loads, verifies and provides run-time environment(JRE) in which java bytecode can be executed.
 
 What is a class?
-Answer:Class is real word entity for example vehile is a class.
+Answer:A class is a blueprint or representation of a real-world object.
 
 What is an object?
 Answer:an entity that has state and behavior is called object for example vehicle is a class and toyota is the object of the vehicle class.
@@ -169,7 +173,8 @@ Answer: An Iterator is an object that can be used to loop through collections, l
 
 
 Which one will take more memory: an int or Integer? Why?
-Answer:
+Answer:An integer will take more memory because int is a primitive data type and integer is a class type. An integer
+       occupies 16 bytes whereas int occupies 4 bytes.
 
 Why are Strings considered to be immutable in Java?
 Answer: The string is Immutable in Java because String objects are cached in the String pool.
@@ -190,14 +195,17 @@ Explain the process of Java garbage collection?
 Answer:Java garbage collection is the process by which Java programs perform automatic memory management.
 
 Can you guarantee the garbage collection process?
-Answer:No
+Answer: No, Garbage collection does not guarantee that a program will not run out of memory.
 
 What is the difference between stack and heap in Java?
 Answer:tack is used to store the order of method execution and local variables
        while heap memory stores the objects
 
 What is reflection in Java and why is it useful?
-Answer:
+Answer:Java Reflection is a process of examining or modifying the run time behavior of a class at run time. It is
+       useful since Reflection makes it possible to inspect classes, interfaces, fields and methods at runtime, without
+       knowing the names of the classes, methods etc. at compile time.
+
 
 What is multithreading in Java?
 Answer:Multithreading refers to a process of executing two or more threads simultaneously
@@ -209,17 +217,27 @@ What is a Framework?
 Answer:A framework is a structure that you can build software on.
 
 What are the testing Frameworks available in Java?
-Answer:JUnit, JBehave, Serenity, Selenium, TestNG
+Answer:JUnit, JBehave, Serenity, Selenium, TestNG.
 
 
 What are jUnit and testNG?
-Answer:
+Answer:JUnit and testNG are testing framework for programming language.
 
 What are the dependencies for this project?
-Answer:
+Answer:gson-2.6.2.jar
+               jackson-annotations-2.11.3.jar
+               jackson-core-2.11.3.jar
+               jackson-databind-2.11.3.jar
+               java-json.jar
+               javax.json-1.0.jar
+               mongo-java-driver-3.4.0.jar
+               mysql-connector-java-8.0.28.jar
+               protobuf-java-3.11.4.jar
+               testng-6.8.7.jar
 
 What is dependency injection in Java?
-Answer:
+Answer: Dependency injection (DI) is the concept in which objects get other required objects from outside.
+
 
 Explain what static binding and dynamic binding is?
 Answer:tatic binding uses Type information for binding while Dynamic binding uses Objects to resolve binding.

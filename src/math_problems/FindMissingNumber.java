@@ -16,8 +16,7 @@ public class FindMissingNumber {
         System.out.println("Missing number is :"+ (sum-missingNumber));
     }
     public static void main(String[] args) {
-        FindMissingNumber a= new FindMissingNumber();
-        a.missingNumber();
+
 
     }
 }

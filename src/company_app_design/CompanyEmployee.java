@@ -13,7 +13,7 @@ public class CompanyEmployee implements Employee {
      */
     public static void main(String[] args) {
 
-        EmployeeInfo employeeInfo2= new EmployeeInfo("David",1,"l1","Davis@amazon.com","IT",80000);
+
 
 
     }

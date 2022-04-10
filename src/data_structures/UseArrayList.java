@@ -17,7 +17,7 @@ public class UseArrayList {
          * Store and retrieve data_structures.data from/to a database table.
          */
         SharedStepsDatabase input = new SharedStepsDatabase();
-        List<String> list = new ArrayList();
+        List<Object> list = new ArrayList();
         list.add("Toyota");
         list.add("Honda");
         list.add("Nissan");
@@ -31,10 +31,10 @@ public class UseArrayList {
         String tableName = "Cars";
         String coloumnName = "car_make";
 
-        input.insertList(tableName, coloumnName, Collections.singletonList(list));
+        input.insertArrayList(tableName, Collections.singletonList(list));
 
         String query = "SELECT * FROM Cars";
-        list = input.executeQueryReadAllSingleColumn(query, coloumnName);
+        list = Collections.singletonList(input.executeQueryReadAll(query));
 
 
         System.out.println(list);

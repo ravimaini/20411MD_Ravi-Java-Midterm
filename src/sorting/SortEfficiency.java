@@ -14,7 +14,7 @@ import databases.SharedStepsDatabase;
      *
      *  You may use any database, such as MongoDB, Oracle MySql, PostgreSQL, etc, to store data and retrieve data.
      *
-     *  BONUS: Come to a conclusion about which sorting algorithm is the most efficient, given data sets with a size of:
+     *  BONUS: Come to a conclusion about which sorting` algorithm is the most efficient, given data sets with a size of:
      *         10
      *         100
      *         1000

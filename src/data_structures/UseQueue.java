@@ -54,9 +54,9 @@ public class UseQueue {
 
         // IMPLEMENT HERE
 
-        sql.insertList(tableName, coloumnName, Collections.singletonList(names));
+        sql.insertQueue(tableName, names);
 
-        String query = "SELECT * FROM names";
+        String query = "SELECT * FROM Employee_Names";
 
         try {
             coloumnName = String.valueOf(sql.executeQueryReadAll(query));

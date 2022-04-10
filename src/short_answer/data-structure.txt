@@ -4,7 +4,7 @@ Why do we need data structure?
 Answer:Data structure provides a way of organizing, managing, and storing data efficiently.
 
 What are the various operations that can be performed on different data structures?
-Answer:Insertion,Deletion,Transversal.
+Answer:Insertion,Deletion,Transversal,Searching.
 
 When would we use data structures in the real world?
 Answer:To store bulk of data in such way where we can perform some operation like retrieving and deleting for eg Amazon User
@@ -13,21 +13,25 @@ What is an Array?
 Answer:Array is a homogenous group of data.
 
 What is the difference between Array and ArrayList?
-Answer:Array is immutable in nature
-       ArrayList is mutable in nature
+Answer:Answer: An array is a basic functionality provided by Java, whereas ArrayList is a class of Java Collections framework.
+
 
 What is a LinkedList?
-Answer:LinkList
+Answer:A linked list is an ordered collection that contains many objects of the same type.
 
 How is an Array different from LinkedList?
-Answer:
+Answer:An array is a collection of elements of a similar data type whereas a linked list is an ordered collection that
+       contains many objects of the same type. Array elements store in a contiguous memory location. Linked list elements can
+       be stored anywhere in the memory or randomly stored.
+
 
 What is a Queue?
 Answer:The queue interface is provided in java.util package and it implements the Collection interface.
-The queue implements FIFO i.e. First In First Out. This means that the elements entered first are the ones that are deleted first.
+       The queue implements FIFO i.e. First In First Out. This means that the elements entered first are the ones that are deleted first.
 
 What is a Stack (referring to data structures)?
-Answer:Stack is
+Answer:Stack is a linear data structure which follows a particular order in which the operations are performed.
+       The order may be LIFO(Last In First Out) or FILO(First In Last Out).
 
 What is FIFO and LIFO?
 Answer:FIFO - First In First Out
@@ -66,7 +70,8 @@ Answer:There are mainly four different ways to copy all elements of one array in
 
 
 What is DFS and BFS?
-Answer:
+Answer:DFS stands for Depth First Search and BFS stands for Breadth First Search. DFS uses stack data structure and
+       BFS uses queue structure
 
 What is Recursion?
 Answer:In computer science, recursion is a programming technique using function or algorithm that calls itself one or more times until a specified condition is met at which time the rest of each repetition is processed from the last one called to the first.
@@ -76,4 +81,14 @@ Answer:Data structure where data elements are arranged sequentially or linearly 
       Data structures where data elements are not arranged sequentially or linearly are called non-linear data structures.
 
 Outline different sorting algorithms and their time complexities:
+The time complexity of an algorithm describes the amount of time an algorithm takes to run the input.
+Bubble sorting: Time complexity--- Worse case: O(n2), Average case: O(n2), Best case: O(n)
+Selection Sort: Time complexity --- Worse case: O(n2), Average case: O(n2), Best case: O(n2)
+Insertion Sort: Time complexity --- Worse case: O(n2), Average case: O(n2), Best case: O(n)
+Merge Sort: Time complexity --- Worse case: O(n log n), Average case: O(n log n), Best case: O(n log n)
+Quicksort: Time complexity --- Worse case: O(n2), Average case: O(n log n), Best case: O(n log n)
+Heap Sort: Time complexity --- Worse case: O(n log n), Average case: O(n log n), Best case: O(n log n)
+Counting Sort: Time complexity --- Worse case: O(n + k), Average case: O(n + k), Best case: O(n + k)
+Radix Sort: Time complexity --- Worse case: O(n * k), Average case: O(n * k), Best case: O(n * k)
+Bucket Sort: Time complexity --- Worse case: O(n2), Average case: O(n + k), Best case: O(n + k)
 

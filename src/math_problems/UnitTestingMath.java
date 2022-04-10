@@ -15,7 +15,15 @@ public class UnitTestingMath {
         System.out.println("Fibonacci Series test pass ");
         System.out.println("----------------------------");
         int d=LowestNumber.lowest_Number(new int []{1,5,6,4,3,76,4,3,1});
-        System.out.print("Lowest Number Testing Pass "+d);
+        System.out.println("Lowest Number Testing Pass "+d);
+        System.out.println("----------------------------");
+        FindMissingNumber findnumber= new FindMissingNumber();
+        findnumber.missingNumber();
+        System.out.println("----------------------------");
+        Pattern.pattern(100);
+        System.out.println("----------------------------");
+        PrimeNumber.prim_Number();
+
 
 
     }
